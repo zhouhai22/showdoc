@@ -6,7 +6,7 @@ exports.default = {
   index_login_or_register: '登录 / 注册',
   my_item: '我的项目',
   section_title1: 'ShowDoc',
-  section_description1_1: '一个非常适合IT团队的',
+  section_description1_1: '移动云虚拟网络',
   section_description1_2: '在线API文档、技术文档工具',
   section_title2: 'API文档',
   section_description2_1: 'APP、web前端与服务器常用API来进行交互',

@@ -7,10 +7,11 @@
         <div class="logo-title">
           <h2 class="muted">
             <img
-              src="static/logo/b_64.png"
-              style="width:50px;height:50px;margin-bottom:-10px;"
+              src="static/imgs/logo_black.png"
+              style="width:48px;height:30px"
               alt
-            />ShowDoc
+            />
+            <span style="color: rgb(45, 45, 45)">移动云虚拟网络</span>
           </h2>
         </div>
         <div class="header-btn-group pull-right">
@@ -261,7 +262,12 @@ a {
 .logo-title {
   margin-left: 0px;
 }
-
+.muted {
+  width: 200px;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
 .container-thumbnails {
   margin-top: 30px;
   max-width: 1000px;

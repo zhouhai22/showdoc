@@ -5,7 +5,7 @@
       <div class="header-wrap">
         <div class="logo">
           <a href="/">
-            <img src="static/imgs/Logo.png" />
+            <img src="static/imgs/logo.svg" style="width:51px;height:36px;" />
           </a>
         </div>
         <input type="checkbox" name id="mobile-menu-toggle" value />
@@ -16,14 +16,6 @@
           <ul>
             <li>
               <router-link :to="link">{{ link_text }}</router-link>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                v-if="lang == 'zh-cn'"
-                href="https://www.showdoc.cc/clients"
-                >客户端</a
-              >
             </li>
           </ul>
         </div>
@@ -51,146 +43,6 @@
           </div>
         </div>
         <div class="hbanner-imgs"></div>
-      </div>
-    </div>
-    <div class="hrow hrow1">
-      <div class="wrapper">
-        <div class="img fl">
-          <img src="static/imgs/home2.png" />
-          <div class="box">
-            <img src="static/imgs/home2-img.png" />
-          </div>
-        </div>
-        <div class="txt fr">
-          <h2>{{ $t('section_title2') }}</h2>
-          <div class="desc">
-            <p>
-              <img src="static/imgs/Vector.png" />
-              {{ $t('section_description2_1') }}
-            </p>
-            <p>
-              <img src="static/imgs/Vector.png" />
-              {{ $t('section_description2_2') }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hrow hrow2">
-      <div class="wrapper">
-        <div class="img fr">
-          <img src="static/imgs/home3.png" />
-        </div>
-        <div class="txt fl">
-          <h2>{{ $t('section_title3') }}</h2>
-          <div class="desc">
-            <p>
-              <img src="static/imgs/Vector1.png" />
-              {{ $t('section_description3_1') }}
-            </p>
-            <p>
-              <img src="static/imgs/Vector1.png" />
-              {{ $t('section_description3_2') }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hrow hrow3">
-      <div class="wrapper">
-        <div class="img fl">
-          <img src="static/imgs/home4.png" />
-        </div>
-        <div class="txt fr">
-          <h2>{{ $t('section_title4') }}</h2>
-          <div class="desc">
-            <p>
-              <img src="static/imgs/Vector.png" />
-              {{ $t('section_description4_1') }}
-            </p>
-            <p>
-              <img src="static/imgs/Vector.png" />
-              {{ $t('section_description4_2') }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hrow hrow4">
-      <div class="wrapper">
-        <div class="img fr">
-          <img src="static/imgs/home5.png" />
-        </div>
-        <div class="txt fl">
-          <h2>{{ $t('section_title5') }}</h2>
-          <div class="desc">
-            <p>{{ $t('section_description5') }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hrow hrow5">
-      <div class="wrapper">
-        <div class="img fl">
-          <img src="static/imgs/home6.png" />
-        </div>
-        <div class="txt fr">
-          <h2>{{ $t('section_title6') }}</h2>
-          <div class="desc">
-            <p>
-              <img src="static/imgs/Vector1.png" />
-              {{ $t('section_description6_1') }}
-            </p>
-            <p>
-              <img src="static/imgs/Vector1.png" />
-              {{ $t('section_description6_2') }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hrow hrow6">
-      <div class="wrapper">
-        <div class="img fr">
-          <img src="static/imgs/home7.png" />
-        </div>
-        <div class="txt fl">
-          <h2>{{ $t('section_title7') }}</h2>
-          <div class="desc">
-            <p>{{ $t('section_description7_1') }}</p>
-            <p>{{ $t('section_description7_2') }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hrow hrow7">
-      <div class="wrapper">
-        <div class="img fl">
-          <img src="static/imgs/home8.png" />
-        </div>
-        <div class="txt fr">
-          <h2>{{ $t('section_title8') }}</h2>
-          <div class="desc">
-            <p>{{ $t('section_description8_1') }}</p>
-            <p>{{ $t('section_description8_2') }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hfoot">
-      <div class="wrapper">
-        <h2>{{ $t('section_description9') }}</h2>
-        <router-link to="/user/login" class="btn">{{
-          $t('section_title9')
-        }}</router-link>
-      </div>
-      <div class="copyright">
-        <a href="https://beian.miit.gov.cn/">{{ beian }}</a>
       </div>
     </div>
   </div>
@@ -248,7 +100,7 @@ export default {
     this.getHeight()
     this.homePageSetting()
     that.link = '/user/login'
-    that.link_text = that.$t('index_login_or_register')
+    that.link_text = that.$t('login')
     this.get_user_info(function(response) {
       if (response.data.error_code === 0) {
         that.link = '/item/index'
