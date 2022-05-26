@@ -16,6 +16,7 @@
         </div>
         <div class="header-btn-group pull-right">
           <el-tooltip
+            v-if="isAdmin"
             class="item"
             effect="dark"
             :content="$t('team_mamage')"

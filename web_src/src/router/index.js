@@ -26,7 +26,6 @@ import Attachment from '@/components/attachment/Index'
 import ItemGroup from '@/components/item/group/Index'
 import Message from '@/components/message/Index'
 
-
 Vue.use(Router)
 
 export default new Router({

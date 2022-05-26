@@ -30,17 +30,6 @@
             <br />
             <font class="f-blue">{{ $t('section_description1_2') }}</font>
           </h2>
-          <div class="btns">
-            <a
-              href="https://www.showdoc.cc/demo"
-              target="_blank"
-              class="btn on"
-              >{{ $t('demo') }}</a
-            >
-            <a href="https://www.showdoc.cc/help" target="_blank" class="btn">{{
-              $t('more')
-            }}</a>
-          </div>
         </div>
         <div class="hbanner-imgs"></div>
       </div>
