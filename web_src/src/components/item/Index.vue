@@ -18,53 +18,6 @@
           <el-tooltip
             class="item"
             effect="dark"
-            :content="$t('feedback')"
-            placement="top"
-          >
-            <router-link to>
-              <i @click="feedback" class="el-icon-phone-outline"></i>
-            </router-link>
-          </el-tooltip>
-
-          <el-tooltip
-            v-if="lang == 'zh-cn'"
-            class="item"
-            effect="dark"
-            content="客户端"
-            placement="top"
-          >
-            <a target="_blank" href="https://www.showdoc.cc/clients">
-              <i class="el-icon-mobile-phone"></i>
-            </a>
-          </el-tooltip>
-
-          <el-tooltip
-            v-if="lang == 'zh-cn'"
-            class="item"
-            effect="dark"
-            content="接口开发调试工具RunApi"
-            placement="top"
-          >
-            <a target="_blank" href="https://www.showdoc.cc/runapi">
-              <i class="el-icon-connection"></i>
-            </a>
-          </el-tooltip>
-
-          <el-tooltip
-            v-if="lang == 'zh-cn'"
-            class="item"
-            effect="dark"
-            content="showdoc推送服务"
-            placement="top"
-          >
-            <a target="_blank" href="https://push.showdoc.com.cn">
-              <i class="el-icon-s-promotion"></i>
-            </a>
-          </el-tooltip>
-
-          <el-tooltip
-            class="item"
-            effect="dark"
             :content="$t('team_mamage')"
             placement="top"
           >
