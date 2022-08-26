@@ -300,6 +300,13 @@
         <p></p>
         <p>{{ $t('create_sigle_page_tips') }}</p>
       </div>
+      <p>通过邮件分享：</p>
+      <div class="email-wrapper">
+        <el-input v-model="email" placeholder="请输入邮箱">
+          <template slot="append">.com</template>
+        </el-input>
+        <el-button style="margin-left: 10px;" @click="sendEmail">发送</el-button>
+      </div>
 
       <span slot="footer" class="dialog-footer">
         <el-button type="primary" @click="dialogVisible = false">{{
@@ -424,6 +431,11 @@ a {
 .el-icon-document-copy {
   cursor: pointer;
 }
+.email-wrapper {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
 </style>
 
 <script>
@@ -442,6 +454,7 @@ export default {
   data() {
     return {
       menu: [],
+      email: '',
       dialogVisible: false,
       qr_page_link: '#',
       qr_single_link: '#',
@@ -467,6 +480,9 @@ export default {
     ChangeLog
   },
   methods: {
+    sendEmail() {
+      this.$message.success('发送成功！')
+    },
     edit_page() {
       var page_id = this.page_id > 0 ? this.page_id : 0
       var url = '/page/edit/' + this.item_id + '/' + page_id
